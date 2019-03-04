@@ -104,7 +104,7 @@ section {
         padding: 40px 0;
     }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
     .col-xs-12 {
         width: 100% !important;
     }
@@ -275,7 +275,7 @@ header h1+p, section h2+p {
         margin-bottom: 30px;
     }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
     h1, h2 {
         font-size: 26px !important;
     }
@@ -333,7 +333,7 @@ header h1+p, section h2+p {
     margin-left: 20px;
     vertical-align: middle;
 }
-@media screen and (max-width: 320px){
+@media screen and (max-width: 480px){
     .wrapper-form p {
         padding: 15px;
     }
@@ -491,7 +491,7 @@ button .fa-plus{
         transform: scale(0.6) !important;
     }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
     .services-description h4{
         margin-bottom: 15px;
         font-size: 16px;
@@ -654,7 +654,7 @@ section.clients{
         height: 60px;
     }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
     .carousel{
         height: 350px;
     }
@@ -734,7 +734,7 @@ footer section {
         padding: 10px 20px;
     }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
     
 }
 
