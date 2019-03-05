@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let numPoint = 40;
 
   canvas.width = window.innerWidth + 1000;
-  canvas.height = window.innerHeight + 1000;
+  canvas.height = window.innerHeight + 800;
 
   const molecule = new Molecule(canvas, Point, numPoint);
 

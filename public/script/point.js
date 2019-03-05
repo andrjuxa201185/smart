@@ -4,8 +4,6 @@ class Point {
       this.positionY = 50;
       this.speedY = 1;
       this.speedX = 1;
-      // this.color = "rgb(34, 138, 124)";
-      // this.color = "rgb(128, 255, 0)";
       this.color = "#fc6f4e";
       this.size = 4;
       this.numberLine = 0;
@@ -21,7 +19,6 @@ class Point {
     }
 
     setParam(widthCanvas = 1200, heightCanvas = 600){
-      // this.color = "rgb(128, 255, 0)";
       this.numberLine = 0;
       this.size = 2 + Math.random() * 7;
       this.speedX = -0.5 + Math.random() * 1;
@@ -58,11 +55,9 @@ class Point {
       let width = elem.width;
       let height = elem.height;
       if(this.positionX >= width + (width / 100)  || this.positionX < -(width / 100) ) {
-        // this.speedX = -this.speedX;
         this.setParam(width, height);
       } 
       if(this.positionY >= height + height / 100 || this.positionY < -(height / 100) ) {
-        // this.speedY = -this.speedY;
         this.setParam(width, height);
       }     
     }

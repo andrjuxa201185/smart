@@ -53,7 +53,6 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
 
-
         // imgWatch parallax effect
         if (windowWidth > 980){
             if (imgWatch.getBoundingClientRect().top < windowHeight && imgWatch.getBoundingClientRect().bottom > 0) {
