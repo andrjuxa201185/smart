@@ -5,7 +5,8 @@ class Point {
       this.speedY = 1;
       this.speedX = 1;
       // this.color = "rgb(34, 138, 124)";
-      this.color = "rgb(128, 255, 0)";
+      // this.color = "rgb(128, 255, 0)";
+      this.color = "#fc6f4e";
       this.size = 4;
       this.numberLine = 0;
       this.mouseX = undefined;
@@ -20,9 +21,9 @@ class Point {
     }
 
     setParam(widthCanvas = 1200, heightCanvas = 600){
-      this.color = "rgb(128, 255, 0)";
+      // this.color = "rgb(128, 255, 0)";
       this.numberLine = 0;
-      this.size = 2 + Math.random() * 5;
+      this.size = 2 + Math.random() * 7;
       this.speedX = -0.5 + Math.random() * 1;
       this.speedY = -0.5 + Math.random() * 1;
       this.positionX = this.mouseX || Math.random() * widthCanvas;
@@ -42,7 +43,7 @@ class Point {
       if ((this.positionX == x) && (this.positionY == y)) return;
       ctx.beginPath();
       ctx.strokeStyle = this.color;
-      ctx.lineWidth = 0.3;
+      ctx.lineWidth = 1;
       ctx.moveTo(this.positionX, this.positionY);
       ctx.lineTo(x , y);
       ctx.stroke();

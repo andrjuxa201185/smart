@@ -37,5 +37,10 @@ document.addEventListener('DOMContentLoaded', () => {
         carouselItems[nextItem].classList.add('carousel-item-active');
         listIndicators[nextItem].classList.add('indicators-active');
     })
+
+    let click = new Event('click');
+    setInterval(() => {
+        arrowRight.dispatchEvent(click);
+    }, 2000)
     
 });
