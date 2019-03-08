@@ -10,7 +10,7 @@ a {
 }
 .no-scroll {
     height: 100%;
-    overflow: hidden;
+    overflow-y: hidden;
 }
  .container {
     max-width: 1140px;
@@ -682,6 +682,28 @@ section.clients{
         background-color: transparent;
     }
 }
+
+
+/* browse-page */
+.browse-page{
+    position: fixed;
+    z-index: 9999;
+    bottom: 1%;
+    right: 5%;
+}
+.browse-page button{
+    border: solid 2px #626262;
+    margin: 10px;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    outline: none;
+    background-color: transparent;
+}
+.browse-page button:hover{
+    background-color: #cfcfcff7;
+}
+
 
 /* footer */
 footer section {

@@ -9,5 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (window.innerWidth < 982){
             document.body.classList.toggle('no-scroll');
         }
+    });
+
+    navMunu.addEventListener('click', function() {
+        btnMenu.classList.remove('cross');
+        this.classList.remove('show-menu');
     })
 })

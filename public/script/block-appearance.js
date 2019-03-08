@@ -10,7 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // for section title appearence
     const transformTitle = () => {
         for (let i = 0; i < titleSectionSpan.length; i++) {
-            if (titleSectionSpan[i].getBoundingClientRect().bottom < windowHeight) {
+            if (titleSectionSpan[i].getBoundingClientRect().bottom < windowHeight &&
+            titleSectionSpan[i].getBoundingClientRect().bottom > 0) {
                 titleSectionSpan[i].classList.add("translate-0");
                 titleSection[i].classList.add("translate-0");
             } else {

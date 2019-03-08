@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
   const canvas = document.getElementById('canvas');
-  let numPoint = window.innerWidth > 640 ? 40 : 20;
+  let numPoint = window.innerWidth > 640 ? 50 : 20;
 
-  canvas.width = window.innerWidth + 1000;
-  canvas.height = window.innerHeight + 800;
+  canvas.width = window.innerWidth * 2;
+  canvas.height = window.innerHeight * 2;
 
   const molecule = new Molecule(canvas, Point, numPoint);
 
