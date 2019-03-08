@@ -7,6 +7,14 @@ document.addEventListener('DOMContentLoaded', () => {
     let curentAnchor = -1;
     let nextAnchor = 0;
 
+    // add new func!!!
+    for (const anchor of anchors) {
+        let anchorTop = anchor.getBoundingClientRect().top;
+        if (anchorTop >= 0 && anchorTop < (windowHeight / 2)) {
+            curentAnchor = anchors.indexOf(anchor);
+        }
+    }
+
     next.addEventListener('click', () => {
         nextAnchor = curentAnchor + 1 == anchors.length ? curentAnchor : curentAnchor + 1;
         anchors[nextAnchor].scrollIntoView({ behavior: 'smooth', block: "start" });

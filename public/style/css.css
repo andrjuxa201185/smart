@@ -692,7 +692,7 @@ section.clients{
     right: 5%;
 }
 .browse-page button{
-    border: solid 2px #626262;
+    border: solid 1px #626262;
     margin: 10px;
     padding: 5px 15px;
     cursor: pointer;
@@ -702,6 +702,18 @@ section.clients{
 }
 .browse-page button:hover{
     background-color: #cfcfcff7;
+}
+@media screen and (max-width: 480px) {
+    .browse-page button.prev-page, 
+    .browse-page button.next-page {
+         display: none;
+    }
+    .browse-page button{
+        font-size: 12px;
+    }
+    .browse-page button:hover{
+        background-color: transparent;
+    }
 }
 
 
