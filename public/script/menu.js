@@ -11,8 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    navMunu.addEventListener('click', function() {
-        btnMenu.classList.remove('cross');
-        this.classList.remove('show-menu');
+    navMunu.addEventListener('click', function(e) {
+        if (e.target.nodeName ==='A') {
+            btnMenu.classList.remove('cross');
+            this.classList.remove('show-menu');
+            document.body.classList.remove('no-scroll')
+        }
     })
 })

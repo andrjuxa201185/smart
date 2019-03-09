@@ -30,12 +30,12 @@ document.addEventListener("DOMContentLoaded", () => {
         if (windowWidth > 640) {
             if (workBoxItems[0].getBoundingClientRect().top < windowHeight){
                 let time = 0;
-                for (const item of workBoxItems) {
-                    setTimeout(() => {item.classList.add("translate-0")}, time += 200);
+                for (let i = 0; i < workBoxItems.length; i++) {
+                    setTimeout(() => {workBoxItems[i].classList.add("translate-0")}, time += 200);
                 } 
             } else {
-                for (const item of workBoxItems) {
-                        item.classList.remove("translate-0");
+                for (let i = 0; i < workBoxItems.length; i++) {
+                    workBoxItems[i].classList.remove("translate-0");
                 }
             }
         } else {

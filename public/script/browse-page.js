@@ -7,13 +7,15 @@ document.addEventListener('DOMContentLoaded', () => {
     let curentAnchor = -1;
     let nextAnchor = 0;
 
-    // add new func!!!
-    for (const anchor of anchors) {
-        let anchorTop = anchor.getBoundingClientRect().top;
-        if (anchorTop >= 0 && anchorTop < (windowHeight / 2)) {
-            curentAnchor = anchors.indexOf(anchor);
+    const setCurrentAnchor = () => {
+        for (const anchor of anchors) {
+            let anchorTop = anchor.getBoundingClientRect().top;
+            if (anchorTop >= 0 && anchorTop < (windowHeight / 2)) {
+                curentAnchor = anchors.indexOf(anchor);
+            }
         }
     }
+    setCurrentAnchor();
 
     next.addEventListener('click', () => {
         nextAnchor = curentAnchor + 1 == anchors.length ? curentAnchor : curentAnchor + 1;
@@ -31,14 +33,10 @@ document.addEventListener('DOMContentLoaded', () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
         curentAnchor = -1;
         nextAnchor = 0;
+        setCurrentAnchor()
     })
 
     document.addEventListener('scroll', () => {
-        for (const anchor of anchors) {
-            let anchorTop = anchor.getBoundingClientRect().top;
-            if (anchorTop > 0 && anchorTop < (windowHeight / 2)) {
-                curentAnchor = anchors.indexOf(anchor);
-            }
-        }
+        setCurrentAnchor();
     })
 });
