@@ -124,8 +124,35 @@ section {
 }
 
 
+/* -----------PRELOADER-------------------- */
+#preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    background-color: #19bd99;
+    transition: all 1s;
+    opacity: 1;
+}
+.wrapper-pre-img{
+    position: relative;
+    width: 20vh;
+    height: 20vh;
+    background-image: url('../img/ball-triangle.svg');
+    background-size: cover;
+}
+#preloader h2{
+    font-size: 42px;
+    letter-spacing: 5px;
+    text-indent: 5px;
+    text-transform: uppercase;
+    opacity: .5;
+}
 
-/* header */
+
+/* ------------------header---------------- */
 
 header {
     position: relative;
@@ -170,7 +197,7 @@ header a h2::first-letter {
 }
 header .toggler-menu {
     position: absolute;
-    z-index: 9999;
+    z-index: 9997;
     height: 35px;
     width: 35px;
     top: 20px;
@@ -195,6 +222,7 @@ header .toggler-menu div{
 }
 .cross {
     position: fixed !important;
+    z-index: 9998 !important;
 }
 .cross div:nth-of-type(2){
     opacity: 0;
@@ -216,7 +244,7 @@ header .toggler-menu div{
 /* header nav-fixed-menu */
 .show-menu {
     opacity: 1 !important;
-    z-index: 9998 !important;
+    z-index: 9997 !important;
 }
 .nav-menu {
     opacity: 0;

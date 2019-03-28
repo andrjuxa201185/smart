@@ -1,3 +1,12 @@
+window.addEventListener('load', () => {
+    const preloader = document.getElementById('preloader');
+    preloader.style.opacity = 0;
+    document.body.classList.remove('no-scroll');
+    setTimeout(() => {
+        preloader.style.display = 'none';
+    }, 1000);
+});
+
 document.addEventListener("DOMContentLoaded", () => {
     const windowHeight = window.innerHeight;
     const windowWidth = window.innerWidth;
